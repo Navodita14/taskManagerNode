@@ -1,4 +1,3 @@
-const { MongoGCPError } = require('mongodb')
 const mongoose= require('mongoose')
 
 const schema= new mongoose.Schema({
@@ -6,7 +5,6 @@ const schema= new mongoose.Schema({
         type:String,
         required:[true,"Name is required"],
         trim:true,
-        maxlength:[20, "Name cannot be longer than 20"]
     }, completed:{type:Boolean, default:false}
 })
 
